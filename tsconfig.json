@@ -1,10 +1,19 @@
 {
   "compilerOptions": {
+    "target": "ES2017",
+    "module": "ES2020",
+    "allowJs": false,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "allowJs": true
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "importsNotUsedAsValues": "preserve",
+    "sourceMap": true,
   },
-  "files": ["src/index.ts"]
+  "include": ["src/**/*"],
 }

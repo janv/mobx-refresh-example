@@ -1,15 +1,7 @@
-# 🚀 Welcome to your new awesome project!
+This project contains a failing example for https://github.com/facebook/react/issues/20417#issuecomment-906545335
 
-This project has been created using **webpack-cli**, you can now run
+- Run `yarn`, followed by `yarn serve`.
+- Observe the issue when removing the comment in `Component`
+- The issue does not occur if `observe` is left out
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+I think the exact workings of Mobx are irrelevant, but it is probably interesting to see what the decorator does: https://github.com/mobxjs/mobx/blob/main/packages/mobx-react-lite/src/observer.ts
