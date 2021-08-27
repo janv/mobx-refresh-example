@@ -1,4 +1,4 @@
 import { render } from "react-dom";
-import  Component from "./Component";
+import  TSComponent from "./TSComponent";
 
-render(<div>hallo, <Component/></div>,document.getElementById('root'))
+render(<div>hallo, <TSComponent/></div>,document.getElementById('root'))

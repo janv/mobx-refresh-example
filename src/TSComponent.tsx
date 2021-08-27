@@ -1,13 +1,13 @@
 import { observer } from "mobx-react-lite";
 import { useState } from "react";
 
-function Component() {
+function TSComponent() {
     const [a, setA] =  useState('a')
     // const [b, setB] =  useState('B')
     return <div>
-        This is Component
+        This is TS Component
     </div>
 }
 
-// export default Component
-export default observer(Component)
+// export default TSComponent
+export default observer(TSComponent)
