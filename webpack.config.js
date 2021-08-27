@@ -24,6 +24,15 @@ const config = {
     module: {
         rules: [
             {
+                test: /\.(js|jsx)$/i,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                options: {
+                    plugins: [require.resolve('react-refresh/babel')],
+                    presets: ['@babel/preset-env', ['@babel/preset-react', {runtime: 'automatic'}]]
+                }
+            },
+            {
                 test: /\.(ts|tsx)$/i,
                 exclude: ['/node_modules/'],
                 loader: 'ts-loader',
